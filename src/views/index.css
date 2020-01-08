@@ -1,0 +1,131 @@
+.pageWrap{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.ant-layout-header{
+    padding: 0;
+}
+#logo{
+    color: #fff;
+    text-align: center;
+}
+.headerDivider{
+    float: left;
+    height: 44px;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+    
+}
+#nav{
+    float: left;
+   height: 64px;
+   line-height: 64px;
+   font-size: 16px;
+}
+.ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+    font-size: 16px;
+}
+
+.xsPane {
+   position: absolute;
+   left: 90%;
+   top: 0; 
+}
+.main{
+    flex: 1;
+}
+.wrap{
+   height:100%;
+}
+#indexMenu{
+    border-right: none;
+}
+#indexMenu li{
+    text-align: center;
+    border-right: 3px solid transparent;
+}
+#indexMenu li:hover{
+    border-right: 3px solid #1980ff;
+}
+@media all and (max-width:768px){
+    #indexMenu{
+        display: flex;
+    }
+    #indexMenu li{
+        text-align: center;
+        border-right: none;
+        flex: 1;
+    }
+    #indexMenu li:hover{
+        border-right: none;
+        border-bottom: 3px solid #1980ff;
+    }
+}
+/* 帖子列表样式 */
+.loginname,.ant-list-item-meta-title{
+    color: #1980ff;
+}
+.ant-list-item-action li a{
+    color:rgba(0, 0, 0, 0.45);
+}
+.wrapper{
+    padding: 0 50px;
+}
+
+
+.userheader{
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.userheader img{
+    width: 100px;
+    height: 100px;
+}
+.userheader span{
+    width: 100px;
+    height: 100px;
+}
+
+
+.login{
+    width: 500px;
+    margin: 200px auto;
+    
+}
+#components-form-demo-normal-login .login-form {
+    max-width: 300px;
+  }
+  #components-form-demo-normal-login .login-form-forgot {
+    float: right;
+  }
+  #components-form-demo-normal-login .login-form-button {
+    width: 100%;
+  }
+
+  .my-header{
+      display: flex;
+      justify-content: space-around;
+      height: 50px;
+      line-height: 50px;
+      width: 100%;
+      background-color: #fff;
+  }
+  .my-header span{
+      margin-left: 15px;
+      display: inline-block;
+      line-height: 50px;
+  }
+  .my-header .logout{
+      cursor: pointer;
+}
+  .back-home{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 50px;
+  }

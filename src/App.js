@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import RouterIndex from "./router/index"
+import MainHeader from "./views/main-header"
+import MainFooter from "./views/main-footer"
+import "./views/index.css"
+class App extends React.Component{
+  render(){
+    return(
+          <div className="pageWrap">
+            <MainHeader></MainHeader>
+            <div className="main">
+              <RouterIndex></RouterIndex>
+            </div>
+            <MainFooter></MainFooter>
+          </div>
+    )
+  }
 }
-
 export default App;
